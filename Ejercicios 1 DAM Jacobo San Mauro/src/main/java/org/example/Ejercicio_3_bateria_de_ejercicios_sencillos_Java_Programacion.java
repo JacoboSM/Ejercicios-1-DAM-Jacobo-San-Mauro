@@ -11,17 +11,17 @@ public class Ejercicio_3_bateria_de_ejercicios_sencillos_Java_Programacion {
         System.out.println("¿Dime un numero? ");
         double num = read.nextDouble();
 
-        if (num > 0 ){
+        if (num == 0 ){
             
-            System.out.println(num + " es un numero positivo");
+            System.out.println(num + " es un numero natural");
             
-        } else if (num < 0) {
+        } else if (num > 0) {
 
             System.out.println(num + " es un numero negativo");
             
         }else{
 
-            System.out.println(num + " es un numero natural");
+            System.out.println(num + " es un numero positivo");
         }
     }
 
