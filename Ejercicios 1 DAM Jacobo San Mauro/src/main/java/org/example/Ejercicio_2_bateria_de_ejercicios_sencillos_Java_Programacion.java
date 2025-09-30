@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Ejercicio_2_bateria_de_ejercicios_sencillos_Java_Programacion {
@@ -10,12 +11,24 @@ public class Ejercicio_2_bateria_de_ejercicios_sencillos_Java_Programacion {
 
         Scanner read = new Scanner(System.in);
 
+        double horas = 0;
+        double precio = 0;
+        boolean control = true;
 
-        System.out.println("¿Que horas trabajas? ");
-        double horas = read.nextDouble();
+        do {
 
-        System.out.println("¿Cuanto cobras por hora? ");
-        double precio = read.nextDouble();
+            try {
+                System.out.println("¿Que horas trabajas? ");
+                horas = read.nextDouble();
+                System.out.println("¿Cuanto cobras por hora? ");
+                precio = read.nextDouble();
+                control = false;
+            } catch (InputMismatchException e) {
+                System.out.println("Introduce solo numeros por favor");
+                read.nextLine();
+            }
+
+        } while (control);
 
         if (horas > JORNADA){
 
@@ -33,5 +46,6 @@ public class Ejercicio_2_bateria_de_ejercicios_sencillos_Java_Programacion {
 
         }
 
-}   }
+    }
+}
 
