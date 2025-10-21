@@ -17,6 +17,8 @@ public class Tema_2_CosasHasNextInt {
             System.out.println("Formato incorrecto. No es un número.");
         }
 
+
+
     }
 
 }

@@ -49,13 +49,13 @@ public class Tema_2_Strings_Practica_1 {
                         mes_num = Integer.parseInt(mes);
                         anyo_num = Integer.parseInt(anyo);
 
-                        // Aqui cierro el catch y pongo la frase en el caso del fallo
+                 // Aqui cierro el catch y pongo la frase en el caso del fallo
                  } catch (NumberFormatException e){
                      System.out.println("Utiliza solo numeros");
                      break;
                  }
 
-                 // aqui meto el else if para limpiar datos que sean mayores o menores a los que pido
+                 // Aqui meto el else if para limpiar datos que sean mayores o menores a los que pido
              }else if (
 
                      ( dia_num <= 0 || dia_num > 31) ||
