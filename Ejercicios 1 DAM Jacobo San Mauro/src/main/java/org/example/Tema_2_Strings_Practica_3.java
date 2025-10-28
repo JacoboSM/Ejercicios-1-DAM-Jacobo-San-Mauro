@@ -69,7 +69,7 @@ public class Tema_2_Strings_Practica_3 {
 
                     for (int i = 10; i <= 1; i--){
 
-                        
+
 
                     }
 
