@@ -39,6 +39,21 @@ public class Tema_3_vector_explicacion {
         System.out.println(Arrays.toString(vector4));
 
 
+        String cadena = "patri;liber;silvia;fabian;angel;manuela;vero"; // como quitar los ";" de una variable y pasar los valores a un vector
+
+        String[] profesores = cadena.split(";");
+
+        System.out.println(Arrays.toString(profesores));
+
+        int[] vector_profes = new int[profesores.length];
+
+        for (int i = 0 ; i < profesores.length ; i++){
+
+            vector_profes[i] = Integer.parseInt(profesores[i]);
+
+        }
+
+
 
 
     }
