@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Tema_3_vector_Practica1 {
@@ -8,6 +9,7 @@ public class Tema_3_vector_Practica1 {
     public static void main (String[] args){
 
         Scanner read = new Scanner(System.in);
+        Random random = new Random();
 
         int[] equipo1 = new int[7];
         int[] equipo2 = new int[7];
@@ -17,6 +19,7 @@ public class Tema_3_vector_Practica1 {
         int resultado = 0;
         int victoria_equipo_1 = 0;
         int victoria_equipo_2 = 0;
+        int pelea_random = random.nextInt(7)+1;
 
 
         do {
@@ -75,16 +78,63 @@ public class Tema_3_vector_Practica1 {
         }while (contador != 2);
 
         System.out.println("Empieza la batalla!");
+        System.out.println("Empieza la pelea con el samurai " + pelea_random);
 
-        for (int i = 0; i < equipo.length; i++){
+        for (int i = pelea_random; i < equipo.length; i++){
 
+            if (equipo1[i] > equipo2[i]){
+
+                victoria_equipo_1++;
+
+                System.out.println("Victoria equipo 1 samurai " + i + ". " + equipo1[i] + " vs " + equipo2[i]);
+
+
+            } else if (equipo1[i] < equipo2[i]) {
+
+                victoria_equipo_2++;
+
+                System.out.println("Victoria equipo 2 samurai " + i + ". " + equipo1[i] + " vs " + equipo2[i]);
+
+            }else {
+
+                System.out.println("Empate de la pelea de los samurais " + i);
+            }
+
+            System.out.println("");
+
+        }
+
+        for (int i = 0 ; i < pelea_random; i++){
+
+            if (victoria_equipo_1 != 4 || victoria_equipo_2 !=4){
+
+                if (equipo1[i] > equipo2[i]){
+
+                    victoria_equipo_1++;
+
+                    System.out.println("Empate de la pelea de los samurais " + i + ". " + equipo1[i] + " vs " + equipo2[i]);
+
+
+                } else if (equipo1[i] < equipo2[i]) {
+
+                    victoria_equipo_2++;
+
+                    System.out.println("Victoria equipo 2 samurai " + i + ". " + equipo1[i] + " vs " + equipo2[i]);
+
+                }else {
+
+                    System.out.println("Empate de la pelea de los samurais " + i + ". " + equipo1[i] + " vs " + equipo2[i]);
+                }
+
+            }else {
+
+                System.out.println("Ha ganado el equipo 1");
+
+            }
 
 
 
         }
-
-
-
 
 
     }
