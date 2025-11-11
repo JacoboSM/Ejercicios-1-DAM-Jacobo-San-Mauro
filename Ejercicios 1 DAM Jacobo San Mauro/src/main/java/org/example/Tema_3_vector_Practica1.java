@@ -12,8 +12,12 @@ public class Tema_3_vector_Practica1 {
         int[] equipo1 = new int[7];
         int[] equipo2 = new int[7];
         int[] equipo = new  int[7];
-        int contador =0;
+        int contador = 0;
+        int contador_pelea = 0;
         int resultado = 0;
+        int victoria_equipo_1 = 0;
+        int victoria_equipo_2 = 0;
+
 
         do {
 
@@ -70,9 +74,15 @@ public class Tema_3_vector_Practica1 {
 
         }while (contador != 2);
 
-        System.out.println(Arrays.toString(equipo1));
+        System.out.println("Empieza la batalla!");
 
-        System.out.println(Arrays.toString(equipo2));
+        for (int i = 0; i < equipo.length; i++){
+
+
+
+
+        }
+
 
 
 
