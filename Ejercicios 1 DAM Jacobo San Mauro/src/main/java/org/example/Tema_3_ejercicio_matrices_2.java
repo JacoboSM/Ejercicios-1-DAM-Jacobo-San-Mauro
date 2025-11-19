@@ -25,7 +25,6 @@ public class Tema_3_ejercicio_matrices_2 {
                 matriz2[i][j] = random.nextInt(100)+1;
 
             }
-
         }
 
         System.out.println("Matriz 1");
@@ -42,53 +41,6 @@ public class Tema_3_ejercicio_matrices_2 {
                 if (matriz[i][j] >= matriz2[i][j]){
 
                     matriz3[i][j] = matriz[i][j];
-
-                }else {
-
-                    matriz3[i][j] = matriz2[i][j];
-
-                }
-
-            }
-
-        }
-
-        System.out.println("Matriz final");
-        System.out.println(" ");
-        System.out.println(Arrays.deepToString(matriz3));
-
-
-
-        int[][] matriz4 =new int[4][4];
-        int[][] matriz5 =new int[4][4];
-        int aux = 0;
-
-        for ( i = 0; i < matriz4.length; i++){
-
-            for ( j = 0; j < matriz4[i].length; j++) {
-
-                matriz4[i][j] = random.nextInt(100)+1;
-                matriz5[i][j] = random.nextInt(100)+1;
-
-            }
-
-        }
-
-        System.out.println("Matriz 4");
-        System.out.println(Arrays.deepToString(matriz4));
-        System.out.println(" ");
-        System.out.println("Matriz 5");
-        System.out.println(Arrays.deepToString(matriz5));
-        System.out.println(" ");
-
-        for ( i = 0; i < matriz.length; i++){
-
-            for ( j = 0; j < matriz[i].length; j++) {
-
-                if (matriz4[i][j] >= matriz5[i][j]){
-
-                    aux = matriz4[i][j];
-                    
 
                 }else {
 
