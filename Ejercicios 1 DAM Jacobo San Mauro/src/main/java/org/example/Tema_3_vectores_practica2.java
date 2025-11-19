@@ -27,7 +27,7 @@ public class Tema_3_vectores_practica2 {
 
             }
 
-            int
+
 
 
 
